@@ -23,25 +23,40 @@ fn main() {
 
             let key: &[u8] = user_key.as_bytes();
 
-            println!("{}", "Processing...".cyan());
+            println!(
+                "{}",
+                "Processing...".cyan()
+            );
 
             match task.as_str() {
                 "encrypt" => encrypt_file(input_path, output_path, key).is_ok(),
                 "decrypt" => decrypt_file(input_path, output_path, key).is_ok(),
                 _         => {
-                    println!("{}", "Unknown task.".bright_red());
+                    println!(
+                        "{}",
+                        "Unknown task.".bright_red()
+                    );
                     false
                 }
             }
         },
         _ => {
-            println!("{}", "Wrong arguments.".bright_red());
+            println!(
+                "{}",
+                "Wrong arguments.".bright_red()
+            );
             false
         }
     };
 
     if success {
-        println!("{}", format!("Successfully finished {}ing.", arg(1).unwrap()).green());
+        println!(
+            "{}",
+            format!(
+                "Successfully finished {}ing.",
+                arg(1).unwrap()
+            ).green()
+        );
     };
 
 }

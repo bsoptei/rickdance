@@ -1,9 +1,9 @@
 [package]
-name = "cryptfile"
+name    = "cryptfile"
 version = "0.1.0"
 authors = ["bsoptei <bsoptei@gmail.com>"]
 
 [dependencies]
-aes-stream = "0.2.1"
-colored = "1.6"
+aes-stream  = "0.2.1"
+colored     = "1.6"
 rust-crypto = "^0.2"
