@@ -53,7 +53,7 @@ fn main() {
         println!(
             "{}",
             format!(
-                "Successfully finished {}ing.",
+                "Successfully finished {}ing.", // usually encrypting/decrypting xD
                 arg(1).unwrap()
             ).green()
         );
