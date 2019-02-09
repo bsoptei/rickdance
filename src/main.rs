@@ -1,14 +1,12 @@
-extern crate aesstream;
-extern crate colored;
-extern crate crypto;
-
 use aesstream::{AesReader, AesWriter};
 use colored::*;
 use crypto::aessafe::{AesSafe128Decryptor, AesSafe128Encryptor};
 
-use std::env;
-use std::fs::File;
-use std::io::{Read, Write};
+use std::{
+    env,
+    fs::File,
+    io::{Read, Write},
+};
 
 type Res = Result<(), std::io::Error>;
 
